@@ -1,10 +1,13 @@
 <li class="video-list-entry media">
   <div class="media-left">
-    <img ng-src="{{$ctrl.videoThumbnail}}"/>
-    <video ng-src="{{$ctrl.videoUrl}}"/>
+    <img ng-src="{{$ctrl.item.snippet.thumbnails.default.url}}"/>
   </div>
   <div class="media-body">
-    <div class="video-list-entry-title">{{$ctrl.videoTitle}}</div>
-    <div class="video-list-entry-detail">{{$ctrl.videoDescription}}</div>
+    <div class="video-list-entry-title">{{$ctrl.item.snippet.title}}</div>
+    <div class="video-list-entry-detail">{{$ctrl.item.snippet.description}}</div>
   </div>
 </li>
+<!-- ng-src="{{$ctrl.videoUrl}}"
+ng-src="{{$ctrl.videoThumbnail}}"
+{{$ctrl.videoTitle}}
+{{$ctrl.videoDescription}} -->

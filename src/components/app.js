@@ -6,8 +6,8 @@ angular.module('video-player')
     video: '<'
   },
   controller: function() {
-    this.video = window.exampleVideoData[0];
-    this.videoUrl = 'https://www.youtube.com/embed/' + window.exampleVideoData[0].id.videoId;
+    // this.video = window.exampleVideoData[0];
+    // this.videoUrl = 'https://www.youtube.com/embed/' + window.exampleVideoData[0].id.videoId;
   },
   templateUrl: 'src/templates/app.html'
 });
