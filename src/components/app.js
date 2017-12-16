@@ -5,7 +5,7 @@ angular.module('video-player')
   bindings: {
     video: '<'
   },
-  controller: function() {
+  controller: function($http) {
     this.youTubeSearchText = '';
     this.videos = window.exampleVideoData;
     this.currentVideo = this.videos[0];
@@ -14,13 +14,35 @@ angular.module('video-player')
       this.currentVideo = this.videos[index];
     };
 
+    this.getYoutube = (searchText) => {
+      $http({
+        method: 'GET',
+        url: 'https://www.googleapis.com/youtube/v3/search',
+        params: {
+          key: window.YOUTUBE_API_KEY,
+          type: 'video',
+          maxResults: 5,
+          part: 'id,snippet',
+          q: searchText,
+          videoEmbeddable: true
+        }
+      }).then(function (response) {
+        console.dir(response.data.items);
+        console.log('clicked');
+        console.log('text', searchText);
+        this.videos = response.data.items;
+        console.log(this.videos);
+        this.currentVideo = this.videos[0];
+      });
+    },
+ 
+
     this.searchResults = (searchText) => {
       // call our youtube search function with searchtext data from query
       // receive response items
       // set videos equal to search results and pass data down to children
-      console.log('clicked');
-      console.log('text', searchText);
-      this.videos = items;
+      // console.log('text', searchText);
+      this.videos = data.items;
       this.currentVideo = this.videos[0];
     };
 
