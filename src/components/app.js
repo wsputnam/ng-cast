@@ -3,9 +3,10 @@ angular.module('video-player')
 .component('app', {
   // TODO
   bindings: {
-    video: '<'
+    video: '<',
+    searchResults: '<'
   },
-  controller: function($http) {
+  controller: function($scope, $http) {
     this.youTubeSearchText = '';
     this.videos = window.exampleVideoData;
     this.currentVideo = this.videos[0];
@@ -13,6 +14,8 @@ angular.module('video-player')
     this.selectVideo = (index) => {
       this.currentVideo = this.videos[index];
     };
+  
+  
 
     this.getYoutube = (searchText) => {
       $http({
@@ -33,18 +36,30 @@ angular.module('video-player')
         this.videos = response.data.items;
         console.log(this.videos);
         this.currentVideo = this.videos[0];
+        console.log(this.currentVideo);
+
+
+        // youTube.searchResults();
+        // this.searchResults(response.data.items);
+        // console.log($scope.videos);
       });
-    },
+    };
+
+    // this.getYoutube = (data) => {
+    //   this.videos = data;
+    //   this.currentVideo = data[0];
+    // };
+ 
  
 
-    this.searchResults = (searchText) => {
-      // call our youtube search function with searchtext data from query
-      // receive response items
-      // set videos equal to search results and pass data down to children
-      // console.log('text', searchText);
-      this.videos = data.items;
-      this.currentVideo = this.videos[0];
-    };
+    // $scope.searchResults = () => {
+    //   // call our youtube search function with searchtext data from query
+    //   // receive response items
+    //   // set videos equal to search results and pass data down to children
+    //   // console.log('text', searchText);
+    //   this.videos = app.get();
+    //   this.currentVideo = this.videos[0];
+    // };
 
 
   },

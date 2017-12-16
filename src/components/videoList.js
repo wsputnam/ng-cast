@@ -2,7 +2,8 @@ angular.module('video-player')
 .component('videoList', {
   bindings: {
     videos: '<',
-    clickAgain: '<'
+    clickAgain: '<',
+    getYoutube: '<'
   },
 
   controller: function() {

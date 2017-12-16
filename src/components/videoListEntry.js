@@ -4,7 +4,8 @@ angular.module('video-player')
   bindings: {
     item: '<',
     doubleClick: '<', 
-    index: '<'
+    index: '<',
+    getYoutube: '<'
   },
   controller: function() {
     

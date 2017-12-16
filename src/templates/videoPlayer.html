@@ -1,4 +1,4 @@
-<div ng-app="video-player" current-video="$ctrl.currentVideo" class="video-player">
+<div ng-app="video-player" get-youtube="$ctrl.getYoutube" current-video="$ctrl.currentVideo" class="video-player">
   <div class="embed-responsive embed-responsive-16by9">
     <iframe class="embed-responsive-item" ng-src="{{'https://www.youtube.com/embed/'+$ctrl.currentVideo.id.videoId}}" allowFullScreen></iframe>
   </div>

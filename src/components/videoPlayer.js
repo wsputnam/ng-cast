@@ -6,7 +6,8 @@ angular.module('video-player')
     videos: '<',
     changeVideo: '<',
     currentVideo: '<',
-    selectVideo: '<'
+    selectVideo: '<',
+    getYoutube: '<'
   },
   controller: function() {
     this.changeVideo = function() {
