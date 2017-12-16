@@ -6,11 +6,18 @@ angular.module('video-player')
     video: '<'
   },
   controller: function() {
-    this.changePlayer = function() {
-      console.log('videos!!!!');
+
+    this.selectVideo = function() {
+      console.log('top');
     };
-    // this.video = window.exampleVideoData[0];
-    // this.videoUrl = 'https://www.youtube.com/embed/' + window.exampleVideoData[0].id.videoId;
+    this.searchResults = function() {
+
+    };
+    this.currentVideo = {};
+    this.videos = window.exampleVideoData;
+
   },
   templateUrl: 'src/templates/app.html'
 });
+
+// will use the $watch function here to keep track of changes in specific variables

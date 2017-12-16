@@ -4,11 +4,11 @@ angular.module('video-player')
   bindings: {
     item: '<'
   },
-  // controller: function() {
-  //   this.changePlayer = function() {
-  //     console.log('videos!!!!');
-  //   };
-  // },
+  controller: function() {
+    // this.changePlayer = function() {
+    //   console.log('works');
+    // };
+  },
 
   templateUrl: 'src/templates/videoListEntry.html'
 });
