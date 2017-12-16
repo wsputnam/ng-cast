@@ -4,7 +4,8 @@ angular.module('video-player')
   // TODO
   bindings: {
     searchText: '<',
-    searchResults: '<'
+    searchResults: '<',
+    changeVideo: '<'
   },
   controller: function() {
 

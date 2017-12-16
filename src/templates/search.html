@@ -1,7 +1,9 @@
 <div class="search-bar form-inline">
   <input class="form-control" type="text" ng-model="$ctrl.searchText"
          ng-model-options="{ debounce: 500 }" ng-change="$ctrl.searchResults(searchText)" />
-  <button ng-click="$ctrl.searchResults($ctrl.searchText)" class="btn">
+  <button ng-click="$ctrl.changeVideo()" class="btn">
     <span class="glyphicon glyphicon-search"></span>
   </button>
 </div>
+
+<!-- $ctrl.searchText -->

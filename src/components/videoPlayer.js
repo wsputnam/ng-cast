@@ -7,12 +7,12 @@ angular.module('video-player')
     changeVideo: '<',
     currentVideo: '<',
     selectVideo: '<',
-    getYoutube: '<'
+    // getYoutube: '<'
   },
   controller: function() {
-    this.changeVideo = function() {
-      $ctrl.currentVideo = $ctrl.videos[0];
-    };
+    // this.changeVideo = function() {
+    //   $ctrl.currentVideo = $ctrl.videos[0];
+    // };
   },
   
   templateUrl: 'src/templates/videoPlayer.html'
