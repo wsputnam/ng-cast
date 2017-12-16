@@ -2,6 +2,7 @@ angular.module('video-player')
 .component('videoListEntry', {
   // TODO
   bindings: {
+    // videos: '=',
     item: '<'
   },
   controller: function() {
