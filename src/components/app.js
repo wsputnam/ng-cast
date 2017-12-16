@@ -14,7 +14,7 @@ angular.module('video-player')
 
     };
     this.currentVideo = {};
-    this.videos = window.exampleVideoData;
+    this.videos = exampleVideoData;
 
   },
   templateUrl: 'src/templates/app.html'

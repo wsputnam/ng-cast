@@ -5,11 +5,11 @@ angular.module('video-player')
     // videos: '=',
     item: '<'
   },
-  controller: function() {
-    // this.changePlayer = function() {
-    //   console.log('works');
-    // };
-  },
+  // controller: function() {
+  //   this.changePlayer = function() {
+  //     console.log('works');
+  //   };
+  // },
 
   templateUrl: 'src/templates/videoListEntry.html'
 });
