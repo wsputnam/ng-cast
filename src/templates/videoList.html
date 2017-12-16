@@ -1,4 +1,4 @@
 <ul class="video-list" videos="$ctrl.videos">
-  <video-list-entry index=$index item ="video" ng-repeat="video in $ctrl.videos" get-youtube="$ctrl.getYoutube" double-click="$ctrl.clickAgain"><h5><em>videoListEntry</em> component goes here</h5></video-list-entry>
+  <video-list-entry index="$ctrl.index" item="video" ng-repeat="video in $ctrl.videos" click="$ctrl.click"><h5><em>videoListEntry</em> component goes here</h5></video-list-entry>
 </ul>
 <!-- <pre><{{$ctrl.videos}}</pre> -->

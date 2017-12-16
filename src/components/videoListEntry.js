@@ -3,10 +3,11 @@ angular.module('video-player')
   // TODO
   bindings: {
     item: '<',
-    doubleClick: '<', 
+    click: '<', 
+    searchText: '<',
+    selectVideo: '<',
     index: '<',
-    getYoutube: '<',
-    searchText: '<'
+    switchVideo: '<'
   },
   controller: function() {
     
