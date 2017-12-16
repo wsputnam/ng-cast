@@ -5,7 +5,8 @@ angular.module('video-player')
     item: '<',
     doubleClick: '<', 
     index: '<',
-    getYoutube: '<'
+    getYoutube: '<',
+    searchText: '<'
   },
   controller: function() {
     

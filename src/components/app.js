@@ -16,8 +16,8 @@ angular.module('video-player')
       this.currentVideo = this.videos[0];
     };
 
-    this.changeVideo = () => {
-      youTube.searchResults('surfer', this.selectVideo); 
+    this.changeVideo = (searchText) => {
+      youTube.searchResults(searchText, this.selectVideo); 
     }; 
 
   },
