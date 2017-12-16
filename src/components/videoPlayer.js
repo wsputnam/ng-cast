@@ -4,7 +4,8 @@ angular.module('video-player')
   // TODO
   bindings: {
     videos: '<',
-    changeVideo: '<'
+    changeVideo: '<',
+    currentVideo: '<'
   },
   controller: function() {
    

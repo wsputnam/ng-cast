@@ -13,8 +13,8 @@ angular.module('video-player')
     this.searchResults = function() {
 
     };
-    this.currentVideo = {};
     this.videos = exampleVideoData;
+    this.currentVideo = this.videos[0];
 
   },
   templateUrl: 'src/templates/app.html'
