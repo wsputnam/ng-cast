@@ -4,9 +4,9 @@ angular.module('video-player')
     videos: '<',
     clickAgain: '<'
   },
+
   controller: function() {
-    
-    
+        
   },
   templateUrl: 'src/templates/videoList.html'
 });
