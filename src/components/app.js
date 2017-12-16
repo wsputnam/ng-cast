@@ -6,6 +6,9 @@ angular.module('video-player')
     video: '<'
   },
   controller: function() {
+    this.changePlayer = function() {
+      console.log('videos!!!!');
+    };
     // this.video = window.exampleVideoData[0];
     // this.videoUrl = 'https://www.youtube.com/embed/' + window.exampleVideoData[0].id.videoId;
   },

@@ -1,4 +1,4 @@
-<li class="video-list-entry media">
+<li class="video-list-entry media" ng-click="$ctrl.changePlayer()">
   <div class="media-left">
     <img ng-src="{{$ctrl.item.snippet.thumbnails.default.url}}"/>
   </div>
@@ -7,7 +7,3 @@
     <div class="video-list-entry-detail">{{$ctrl.item.snippet.description}}</div>
   </div>
 </li>
-<!-- ng-src="{{$ctrl.videoUrl}}"
-ng-src="{{$ctrl.videoThumbnail}}"
-{{$ctrl.videoTitle}}
-{{$ctrl.videoDescription}} -->
