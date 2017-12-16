@@ -5,10 +5,13 @@ angular.module('video-player')
   bindings: {
     videos: '<',
     changeVideo: '<',
-    currentVideo: '<'
+    currentVideo: '<',
+    selectVideo: '<'
   },
   controller: function() {
-   
+    this.changeVideo = function() {
+      $ctrl.currentVideo = $ctrl.videos[1];
+    };
   },
   
   templateUrl: 'src/templates/videoPlayer.html'

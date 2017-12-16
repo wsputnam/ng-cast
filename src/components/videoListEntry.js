@@ -3,13 +3,12 @@ angular.module('video-player')
   // TODO
   bindings: {
     // videos: '=',
-    item: '<'
+    item: '<',
+    doubleClick: '<'
   },
-  // controller: function() {
-  //   this.changePlayer = function() {
-  //     console.log('works');
-  //   };
-  // },
+  controller: function() {
+    
+  },
 
   templateUrl: 'src/templates/videoListEntry.html'
 });
