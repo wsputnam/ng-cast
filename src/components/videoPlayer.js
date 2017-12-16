@@ -10,7 +10,7 @@ angular.module('video-player')
   },
   controller: function() {
     this.changeVideo = function() {
-      $ctrl.currentVideo = $ctrl.videos[1];
+      $ctrl.currentVideo = $ctrl.videos[0];
     };
   },
   
