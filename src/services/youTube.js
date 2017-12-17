@@ -16,9 +16,7 @@ angular.module('video-player')
           videoEmbeddable: true
         }
       }).then(function (response) {
-        console.dir('clicked: ' + response.data.items);
         callback(response.data.items);
-        // this.searchResults(response.data.items);
 
       });
     };
