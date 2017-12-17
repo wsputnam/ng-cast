@@ -5,12 +5,7 @@ angular.module('video-player')
     item: '<',
     click: '<', 
     searchText: '<',
-    selectVideo: '<',
     index: '<',
-    switchVideo: '<'
-  },
-  controller: function() {
-    
   },
 
   templateUrl: 'src/templates/videoListEntry.html'

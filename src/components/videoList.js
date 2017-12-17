@@ -3,14 +3,8 @@ angular.module('video-player')
   bindings: {
     videos: '<',
     click: '<',
-    getYoutube: '<',
-    selectVideo: '<',
-    index: '<',
-    switchVideo: '<'
+    index: '<'
   },
 
-  controller: function() {
-        
-  },
   templateUrl: 'src/templates/videoList.html'
 });
